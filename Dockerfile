@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y cron curl
 
 # Clone your repository or copy your application files
 RUN git clone https://github.com/nthumodifications/courseweb .
-RUN npm install
+RUN npm ci
 
 # Copy the fetch_status script and give execution rights
 COPY fetch_status.sh /app
